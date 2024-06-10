@@ -1250,13 +1250,13 @@ h2.widget-title {
 	margin:1.5rem 0 1rem;
 }
 .author-bio {
-	font-size:2.1rem;
-	line-height:1.5em;
-	font-weight:200;
-	color:#50585D;
-	font-style:italic;
-	letter-spacing:0;
-	text-indent:0;
+	font-size: 2.1rem;
+	line-height: 1.5em;
+	font-weight: 200;
+	color: #50585D;
+	font-style: italic;
+	letter-spacing: 0;
+	text-indent: 0;
 }
 .author-meta {
 	margin: 1.6rem 0;
