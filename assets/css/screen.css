@@ -258,6 +258,8 @@ h6 {
 a {
 	color:#4A4A4A;
 	transition:color 0.3s ease;
+	font-weight: bold; /* Ensures text is not bold */
+    font-style: normal;
 }
 a:hover {
 	color:#111;
@@ -871,6 +873,9 @@ body.nav-opened .nav {
 		padding-bottom:30px;
 	word-wrap:break-word;
 }
+#here {
+	color: blue;
+}
 .grid-item .post {
 	position:relative;
 	border:#EBF2F6 1px solid;
@@ -911,7 +916,8 @@ body.nav-opened .nav {
 }
 body:not(.post-template) .post-title {
 	font-size:2.5rem;
-	font-style:italic;
+	font-style:normal;
+	font-weight: bold;
 	line-height:1.2;
 }
 .post-title a {
@@ -2260,4 +2266,14 @@ div#preloader {
 	line-height:30px;
 	padding:7px 12px;
 	height: 44px;
+}
+
+.divider {
+	height: 1px;
+	width: full-width;
+	color: black;
+	border-bottom: 2px solid #000;
+	margin: 10px, 0px;
+	padding-bottom: 5px;
+	margin-bottom:0;
 }

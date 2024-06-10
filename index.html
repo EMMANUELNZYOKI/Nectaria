@@ -12,21 +12,39 @@
 </head>
 <body class="home-template">
 <div class="site-wrapper">
-	<nav class="main-nav overlay clearfix">
-	<a class="blog-logo" href="index.html"><img src="assets/img/logo.png" alt="Safetyplus"/></a>
-	<ul id="menu">
-		<li class="nav-home nav-current" role="presentation"><a href="index.html">Home Page</a></li>
-		<li class="nav-article-example" role="presentation"><a href="Road safety and Awards.html">Road safety & Awards</a></li>
-		<li class="nav-about-us" role="presentation"><a href="Hospitality.html">Hospitality</a></li>
-		<li class="nav-author-page" role="presentation"><a href="Attachment and Accommodation.html">Attachment and Accommodation</a></li>
-		<span class="socialheader">
-		<a href="https://x.com/safetypluske"><span class='symbol'>circletwitterbird</span></a>
-		<a href="https://www.facebook.com/groups/487030952227422"><span class='symbol'>circlefacebook</span></a>
-		<a href="https://www.google.com/search?q=safetyplus+consulting+limited&oq=safe&gs_lcrp=EgZjaHJvbWUqDggBEEUYJxg7GIAEGIoFMgYIABBFGDwyDggBEEUYJxg7GIAEGIoFMgYIAhBFGDsyBggDEEUYOzIMCAQQRRg5GLEDGIAEMgYIBRAjGCcyBggGEEUYPDIGCAcQRRg80gEIMjU2N2owajeoAgCwAgA&sourceid=chrome&ie=UTF-8"><span class='symbol'>circlegoogleplus</span></a>
-		<a href="mailto:info@safetyplus.co.ke"><span class='symbol'>circleemail</span></a>
-		</span>
-	</ul>
-	</nav>
+</head>
+<body>
+    <nav class="main-nav overlay clearfix">
+        <a class="blog-logo" href="index.html"><img src="assets/img/logo.png" alt="Safetyplus"/></a>
+        <ul id="menu">
+            <li class="nav-item nav-home" role="presentation"><a href="index.html">Home Page</a></li>
+            <li class="nav-item nav-article-example" role="presentation"><a href="Road safety and Awards.html">Road safety & Awards</a></li>
+            <li class="nav-item nav-about-us" role="presentation"><a href="Hospitality.html">Hospitality</a></li>
+            <li class="nav-item nav-author-page" role="presentation"><a href="Attachment and Accommodation.html">Attachment and Accommodation</a></li>
+            <span class="socialheader">
+            <a href="https://x.com/safetypluske"><span class='symbol'>circletwitterbird</span></a>
+            <a href="https://www.facebook.com/groups/487030952227422"><span class='symbol'>circlefacebook</span></a>
+            <a href="https://www.google.com/search?q=safetyplus+consulting+limited&oq=safe&gs_lcrp=EgZjaHJvbWUqDggBEEUYJxg7GIAEGIoFMgYIABBFGDwyDggBEEUYJxg7GIAEGIoFMgYIAhBFGDsyBggDEEUYOzIMCAQQRRg5GLEDGIAEMgYIBRAjGCcyBggGEEUYPDIGCAcQRRg80gEIMjU2N2owajeoAgCwAgA&sourceid=chrome&ie=UTF-8"><span class='symbol'>circlegoogleplus</span></a>
+            <a href="mailto:info@safetyplus.co.ke"><span class='symbol'>circleemail</span></a>
+            </span>
+        </ul>
+    </nav>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const navItems = document.querySelectorAll('nav-item');
+
+            navItems.forEach(item => {
+                item.addEventListener('click', function() {
+                    // Remove the "active" class from all items
+                    navItems.forEach(navItem => navItem.classList.remove('active'));
+
+                    // Add the "active" class to the clicked item
+                    this.classList.add('active');
+                });
+            });
+        });
+    </script>
 	<header class="main-header " style="background-image: url(assets/img/intro.png)">
 	<div class="vertical">
 		<div class="main-header-content inner">
@@ -122,7 +140,7 @@
 					<footer class="post-meta">
 					<img class="author-thumb" src="assets/img/gravatar.jpg" alt="SafetyplusLimited" nopin="nopin"/>
 					<a href="Road safety and Awards.html">SafetyplusLimited</a>
-					on <a href="#">romance</a>
+					<!-- on <a href="#">romance</a> -->
 					<time class="post-date" datetime="2016-12-18">18 December 2016</time>
 					</footer>
 				</div>
@@ -143,7 +161,7 @@
 					<footer class="post-meta">
 					<img class="author-thumb" src="assets/img/gravatar.jpg" alt="SafetyplusLimited" nopin="nopin"/>
 					<a href="Road safety and Awards.html">SafetyplusLimited</a>
-					on <a href="#">romance</a>
+					<!-- on <a href="#">romance</a> -->
 					<time class="post-date" datetime="2016-12-18">18 December 2016</time>
 					</footer>
 				</div>
