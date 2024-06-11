@@ -78,9 +78,3 @@ E-MAGAZINE/
    ```
 5. Open a Pull Request on GitHub.
 
-## License
-This project is licensed under the MIT License.
-
----
-
-You can copy this `README.md` file and use it for your project.
