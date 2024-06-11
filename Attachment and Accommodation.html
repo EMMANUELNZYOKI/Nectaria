@@ -233,8 +233,32 @@ Hospitality Courses</h2>
 					Gain work ethics and acquire self-reliance skills.
 					Contribute to local industry as you develop work-based skills.
 					Establish industry networks and contacts from our networks to help you find and secure a job after you graduate.
+				    </br>For application:
+					<button onclick="openForm()">Click here to apply</button>
 
-					<p><strong>Click <a class="read-more" id="here" href="form.html"> here</a> to apply &raquo;</strong></p>
+					<div id="popupForm" class="popup-form">
+					  <span onclick="closeForm()" class="close">&times;</span>
+					  <iframe id="formFrame" src="form.html" frameborder="0"></iframe>
+					</div>
+					
+					<script>
+					function openForm() {
+					  document.getElementById("popupForm").style.display = "block";
+					}
+					
+					function closeForm() {
+					  document.getElementById("popupForm").style.display = "none";
+					}
+					
+					// Close the form when clicking outside of it
+					window.onclick = function(event) {
+					  var popupForm = document.getElementById("popupForm");
+					  if (event.target == popupForm) {
+						popupForm.style.display = "none";
+					  }
+					}
+					</script>
+					
 				</p>
 				</section>
 				<footer class="post-meta">
