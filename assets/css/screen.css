@@ -1007,7 +1007,7 @@ body:not(.post-template) .post-title {
 .post-template .post-title {
 	margin-bottom:0;
 	letter-spacing:-1px;
-	font-style:italic;
+	font-style:normal;
 }
 .post-template .post-meta {
 	margin:0;
