@@ -517,14 +517,14 @@ body.nav-opened .site-wrapper {
 	font-size:0.9em;
 	letter-spacing:0.3px;
 	font-weight:400;
-	color:#ccc;
+	color:#cccccc;
 	font-family: Arial, Helvetica, sans-serif;
 }
 .main-nav .nav-current a {
 	color:#fff;
 }
 .main-nav a:hover {
-	color: #fff;
+	color: #ffffff;
 }
 /* Navigation */
 body.nav-opened .nav-cover {
