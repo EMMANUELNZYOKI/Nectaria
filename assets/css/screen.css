@@ -931,6 +931,9 @@ body:not(.post-template) .post-title {
 	margin:0;
 	font-size:0.9em;
 	line-height:1.6em;
+	text-align: justify;
+	
+
 }
 .read-more {
 	text-decoration:none;
